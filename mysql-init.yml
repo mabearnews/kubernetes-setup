@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysql-init
+  labels:
+    name: mysql-init
+spec:
+  containers:
+    - resources:
+        limits:
+          cpu: .05
+      image: gcr.io/machronicle-1287/mysql-init
+      name: mysql-init
+      env:
+        - name: VOLUME
+          value: /mnt/mysql-init-data
+      volumeMounts:
+        - name: mysql-backup-volume
+          mountPath: /mnt/mysql-init-data
+  volumes:
+    - name: mysql-backup-volume
+      persistentVolumeClaim:
+        claimName: mysql-backup-volume-claim

@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: machronicle
+spec:
+  # Wordpress does not play nice with TLS now
+  #tls:
+  #  - secretName: ssl-certs
+  backend:
+    serviceName: varnish
+    servicePort: 80
+    

@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wp-init
+  labels:
+    name: wp-init
+spec:
+  containers:
+    - image: gcr.io/machronicle-1287/wp-init
+      name: wp-init
+      env:
+        - name: VOLUME
+          value: /var/www/html
+      volumeMounts:
+        - name: wordpress-volume
+          mountPath: /var/www/html
+  volumes:
+    - name: wordpress-volume
+      persistentVolumeClaim:
+        claimName: wordpress-volume-claim

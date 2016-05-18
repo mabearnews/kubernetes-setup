@@ -1,0 +1,1 @@
+UPDATE `wp_options` SET `option_value` = 'http://www.beta.machronicle.com' WHERE `wp_options`.`option_name` ='siteurl';
