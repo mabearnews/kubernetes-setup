@@ -6,7 +6,7 @@ metadata:
   name: varnish
 spec:
   # NodePort allows Ingress to pick up service
-  type: NodePort
+  type: LoadBalancer
   ports:
     # The port that this service should serve on.
     - port: 80
