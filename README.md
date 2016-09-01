@@ -19,6 +19,7 @@ The setup requires three GCE disks
 Install the Google Cloud SDK from [here](https://cloud.google.com/sdk/) to get kubectl and gcloud on the command line.
 
 Look [here](http://kubernetes.io/docs/user-guide/) for an overview of kubernetes.
+Kubernetes 101 and 202 are good tutorials
 
 Google is great for searching for specific documentation. You should familiarize yourself with Pods, Services and Deployments in additions to learning about the general concept of containers.
 
