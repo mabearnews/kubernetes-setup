@@ -25,3 +25,4 @@ Google is great for searching for specific documentation. You should familiarize
 [This](https://medium.freecodecamp.com/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b#.670q1cq47) is a good intro to containers.
 
 [This](http://www.oliverelliott.org/article/computing/tut_unix/) is a good intro to unix and the shell/terminal.
+1-18, 23, 24, 40
